@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  node-app:
+    # Use the Dockerfile in the current directory to build the image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Map the host port to the container port
+    ports:
+      - "3000:3000"
